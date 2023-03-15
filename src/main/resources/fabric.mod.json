@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "anti-auto-totem",
+  "version": "${version}",
+  "name": "Anti Auto Totem",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/anti-auto-totem/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tk.jandev.antiautototem.client.AntiAutoTotemClient"
+    ],
+    "main": [
+      "tk.jandev.antiautototem.AntiAutoTotem"
+    ]
+  },
+  "mixins": [
+    "anti-auto-totem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
