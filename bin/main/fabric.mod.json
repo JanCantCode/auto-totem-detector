@@ -21,8 +21,8 @@
         "anti-auto-totem.mixins.json"
     ],
     "depends": {
-        "fabricloader": ">=0.14.21",
+        "fabricloader": ">=0.14.14",
         "fabric": "*",
-        "minecraft": "1.19.4"
+        "minecraft": "1.19.2"
     }
 }
