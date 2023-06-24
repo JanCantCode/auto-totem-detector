@@ -36,8 +36,8 @@ public class AntiAutoTotemClient implements ClientModInitializer {
 
                 if (hasTotem(p) && playerMap.get(p.getUuid()) != Tick.currentTick-1) {
 
-                    if (Tick.currentTick-playerMap.get(p.getUuid()) <= Tick.tickCheck && Tick.enabled) {
-                        mc.player.sendMessage(Text.of("§cFlagged "+p.getName().getString()+" for autototem! Ticks diff: " + (Tick.currentTick - playerMap.get(p.getUuid()) * 50) +" miliseconds!"));
+                    if (Tick.currentTick-playerMap.get(p.getUuid()) <= Tick.tickCheck && Tick.enabled && !(Tick.currentTick - playerMap.get(p.getUuid()) < 0)) {
+                        mc.player.sendMessage(Text.of("§cFlagged "+p.getName().getString()+" for autototem! Ticks diff: " + (Tick.currentTick - playerMap.get(p.getUuid())) * 50 +" miliseconds!"));
                     }
 
                 }
